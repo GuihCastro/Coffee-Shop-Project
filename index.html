@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/img/shop-sign.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="Coffee Shop logo" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carousel-coffee">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre nós</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Carta de cafés</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#local">Onde estamos</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+
+                    <input class="form-control me-2" type="search" placeholder="O que deseja?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <!-- CAROUSEL -->
+        <header id="carousel-coffee" class="carousel carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-coffee" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+                        class="d-block w-100" alt="Coffee Bar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>A melhor experiência gastronômica em uma única xícara</h5>
+                        <p>Transforme sabores em momentos inesquecíveis.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                        class="d-block w-100" alt="Coffee sheers">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Compartilhe momentos especiais...</h5>
+                        <p>Não há nada como desfrutar do melhor café ao lado das melhores pessoas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+                        class="d-block w-100" alt="Coffee Shop table">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...Ou curta um momento só seu</h5>
+                        <p>Às vezes, também merecemos um momento especial para curtir a nossa própria companhia.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-coffee" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-coffee" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </header>
+
+        <!-- QUOTE -->
+        <figure class="text-center" id="about">
+            <blockquote class="blockquote">
+                <h3 class="fw-lighter fst-italic mt-5">“Toma um café, que o mundo acabou faz tempo”</h3>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">Caio Fernando Abreu</cite>
+            </figcaption>
+        </figure>
+
+        <!-- ABOUT-CARDS -->
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://plus.unsplash.com/premium_photo-1664970900224-6c67df73191a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                    class="img-fluid rounded-start" alt="Coffee Shop card">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aconchegante como um abraço</h5>
+                                    <h6 class="card-subtitle text-muted mb-3">Acreditamos que um café melhor faz o (seu)
+                                        mundo melhor</h6>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                                        eos! Libero numquam, aspernatur enim debitis quidem animi ipsa. Sunt repudiandae
+                                        facilis doloribus commodi eos natus doloremque in, voluptatum rerum labore?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                    class="img-fluid rounded-start" alt="Coffee Shop card - diversity">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Diverso como o mundo</h5>
+                                    <h6 class="card-subtitle text-muted mb-3">“Se não há café para todos, não haverá
+                                        para
+                                        ninguém.”</h6>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                                        eos! Libero numquam, aspernatur enim debitis quidem animi ipsa. Sunt repudiandae
+                                        facilis doloribus commodi eos natus doloremque in, voluptatum rerum labore?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section id="menu" class="container mt-5 mb-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="espresso" data-bs-toggle="tab" data-bs-target="#espresso-pane"
+                        type="button" role="tab" aria-controls="espresso-pane" aria-selected="true">Espresso</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cappuccino" data-bs-toggle="tab" data-bs-target="#cappuccino-pane"
+                        type="button" role="tab" aria-controls="cappuccino-pane"
+                        aria-selected="false">Cappuccino</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="macchiato" data-bs-toggle="tab" data-bs-target="#macchiato-pane"
+                        type="button" role="tab" aria-controls="macchiato-pane" aria-selected="false">Macchiato</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="special" data-bs-toggle="tab" data-bs-target="#special-pane"
+                        type="button" role="tab" aria-controls="special-pane" aria-selected="false">Especiais</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="coffeeTabContent">
+                <!-- COFFEE-CARDS -->
+                <div class="tab-pane fade show active" id="espresso-pane" role="tabpanel" aria-labelledby="espresso"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1428550443830-190057dc8098?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+                                    class="card-img-top" alt="Espresso 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso 1</h5>
+                                    <p class="card-text">O melhor espresso do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1508088405209-fbd63b6a4f50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+                                    class="card-img-top" alt="Espresso 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso 2</h5>
+                                    <p class="card-text">O melhor espresso do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1582010622410-3060ca20ab10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Espresso 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso 3</h5>
+                                    <p class="card-text">O melhor espresso do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1553742198-6eea5ac42a24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Espresso 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso 4</h5>
+                                    <p class="card-text">O melhor espresso do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80"
+                                    class="card-img-top" alt="Espresso 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso 5</h5>
+                                    <p class="card-text">O melhor espresso do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1580758704548-b03d9e324975?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+                                    class="card-img-top" alt="Espresso 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espresso 6</h5>
+                                    <p class="card-text">O melhor espresso do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="cappuccino-pane" role="tabpanel" aria-labelledby="cappuccino"
+                    tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1511723991310-0e859b96b2e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Cappuccino 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino 1</h5>
+                                    <p class="card-text">O melhor cappuccino do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1611564494260-6f21b80af7ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=813&q=80"
+                                    class="card-img-top" alt="Cappuccino 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino 2</h5>
+                                    <p class="card-text">O melhor cappuccino do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1466337105551-aa3ab7890939?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+                                    class="card-img-top" alt="Cappuccino 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino 3</h5>
+                                    <p class="card-text">O melhor cappuccino do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Cappuccino 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino 4</h5>
+                                    <p class="card-text">O melhor cappuccino do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1480348709911-be15f2c579ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+                                    class="card-img-top" alt="Cappuccino 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino 5</h5>
+                                    <p class="card-text">O melhor cappuccino do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1615324606662-5d6d2ae148f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                                    class="card-img-top" alt="Cappuccino 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cappuccino 6</h5>
+                                    <p class="card-text">O melhor cappuccino do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="macchiato-pane" role="tabpanel" aria-labelledby="macchiato" tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Macchiato 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macchiato 1</h5>
+                                    <p class="card-text">O melhor macchiato do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1608591092378-2d928975dbf0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Macchiato 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macchiato 2</h5>
+                                    <p class="card-text">O melhor macchiato do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1590138695581-1e82b57e78d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+                                    class="card-img-top" alt="Macchiato 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macchiato 3</h5>
+                                    <p class="card-text">O melhor macchiato do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1491309871715-2b9a8ec0be72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Macchiato 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macchiato 4</h5>
+                                    <p class="card-text">O melhor macchiato do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1550247611-e651810312fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Macchiato 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macchiato 5</h5>
+                                    <p class="card-text">O melhor macchiato do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1579888071069-c107a6f79d82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Macchiato 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macchiato 6</h5>
+                                    <p class="card-text">O melhor macchiato do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="special-pane" role="tabpanel" aria-labelledby="special" tabindex="0">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
+                                    class="card-img-top" alt="Special 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special 1</h5>
+                                    <p class="card-text">O melhor café especial do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1498603536246-15572faa67a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                                    class="card-img-top" alt="Special 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special 2</h5>
+                                    <p class="card-text">O melhor café especial do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1461010083959-8a5727311252?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80"
+                                    class="card-img-top" alt="Special 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special 3</h5>
+                                    <p class="card-text">O melhor café especial do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1481455473976-c280ae7c10f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+                                    class="card-img-top" alt="Special 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special 4</h5>
+                                    <p class="card-text">O melhor café especial do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1528696892704-5e1122852276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                                    class="card-img-top" alt="Special 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special 5</h5>
+                                    <p class="card-text">O melhor café especial do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-menu">
+                                <img src="https://images.unsplash.com/photo-1420624226293-19b680e38dd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=808&q=80"
+                                    class="card-img-top" alt="Special 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special 6</h5>
+                                    <p class="card-text">O melhor café especial do mundo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL-LOCAL -->
+        <section id="local" class="container text-center mb-5">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#localModal">
+                Endereço
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="localModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="localModalLabel">Venha nos visitar!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Estamos na Rua Pereira Estéfano, 666 - Vila da Saúde, São Paulo/SP</p>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.8030144809861!2d-46.63665846153646!3d-23.618458237157544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a53c785243d%3A0xf05a86ce334d614a!2sR.%20Pereira%20Est%C3%A9fano%2C%20666%20-%20Vila%20da%20Sa%C3%BAde%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004144-070!5e0!3m2!1spt-BR!2sbr!4v1692539413948!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center bg-dark p-5 mt-5 text-light">
+        <img width="100" src="./assets/img/logo.png" alt="Coffee Shop logo" class="mb-3" />
+
+        <p class="mt-2 mb-0 fw-bold">
+            Coffee Shop | Bons momentos acompanhados de um bom café
+        </p>
+        <p>(11)93331-3519</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
